@@ -1,0 +1,15 @@
+name: "Record Field Coverage"
+description: "Report how many records in a JSON array have a given field present, missing, or null."
+inputs:
+  payload:
+    description: "JSON payload consumed by the action"
+    required: true
+outputs:
+  result:
+    description: "Compact JSON result produced by the action"
+runs:
+  using: "node24"
+  main: "index.js"
+branding:
+  icon: "check-circle"
+  color: "blue"
